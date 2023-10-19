@@ -1,0 +1,59 @@
+.heading {
+    color: grey;
+  }
+
+  .button {
+    background-color: #0074D9; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 4px; 
+  }
+  
+  .button:hover {
+    background-color: #0056B3; 
+  }
+
+
+  .submitButton {
+
+    background-color: #0074D9; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 4px; 
+    margin-left: 10px;
+  }
+
+  .nextButton {
+
+    background-color: #0074D9; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 4px; 
+    margin-left: 10px;
+  }
+
+  li {
+
+    list-style: disc;
+
+    font-size: 16px; 
+    color: #333;
+  }
+
+
+  li {
+
+    font-size: 35px; 
+    color: #333;
+  }
+  
+  li:hover{
+
+    cursor: pointer;
+  }
