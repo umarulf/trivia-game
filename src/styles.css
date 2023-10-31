@@ -1,11 +1,12 @@
 .heading {
     color: grey;
+    
   }
 
   .button {
     background-color: #0074D9; 
     color: white; 
-    padding: 10px 20px; 
+    padding: 17px 35px; 
     border: none; 
     cursor: pointer; 
     border-radius: 4px; 
@@ -16,7 +17,7 @@
   }
 
 
-  .submitButton {
+  /* .submitButton {
 
     background-color: #0074D9; 
     color: white; 
@@ -25,17 +26,19 @@
     cursor: pointer; 
     border-radius: 4px; 
     margin-left: 10px;
-  }
+  } */
 
   .nextButton {
 
     background-color: #0074D9; 
     color: white; 
-    padding: 10px 20px; 
+    padding: 15px 45px; 
     border: none; 
     cursor: pointer; 
     border-radius: 4px; 
-    margin-left: 10px;
+    margin-left: 60px;
+    
+    
   }
 
   li {
@@ -56,4 +59,27 @@
   li:hover{
 
     cursor: pointer;
+    
+  }
+  .question{
+
+    font-size: 40px;
+  }
+  *{
+
+
+    margin: 40px;
+  }
+
+  .exitButton{
+
+
+    background-color: red; 
+    color: white; 
+    padding: 15px 45px; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 4px; 
+
+
   }

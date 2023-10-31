@@ -7,6 +7,10 @@ function QuizPage({ question, nextQuestion }) {
     setSelectedOption(option);
   };
 
+  const exitQuiz = () => {
+    window.location.reload();
+  };
+
   const isCorrect = selectedOption === question.correctAnswer;
 
   const correctStyle = { color: "green" };
@@ -14,7 +18,7 @@ function QuizPage({ question, nextQuestion }) {
 
   return (
     <div>
-      <h2>{question.question}</h2>
+      <h2  className="question">{question.question}</h2>
       <ul>
         {question.options.map((option, index) => (
           <li 
@@ -32,13 +36,11 @@ function QuizPage({ question, nextQuestion }) {
           </li>
         ))}
       </ul>
-      <button className="submitButton"  >Submit</button>
-      {selectedOption && (
-        <p style={isCorrect ? correctStyle : incorrectStyle}>
-          {isCorrect ? "Correct!" : "Incorrect!"}
-        </p>
-      )}
+     
       <button className="nextButton" onClick={nextQuestion}>Next</button>
+      <button className="exitButton" onClick={exitQuiz}>
+        Exit
+      </button>
     </div>
   );
 }
