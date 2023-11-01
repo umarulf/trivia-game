@@ -10,6 +10,7 @@
     border: none; 
     cursor: pointer; 
     border-radius: 4px; 
+    font-size: large;
   }
   
   .button:hover {
@@ -37,6 +38,7 @@
     cursor: pointer; 
     border-radius: 4px; 
     margin-left: 60px;
+    font-size: large;
     
     
   }
@@ -80,6 +82,33 @@
     border: none; 
     cursor: pointer; 
     border-radius: 4px; 
+    font-size: large;
+
+
+  }
+
+  .restartButton{
+
+    background-color: green; 
+    padding: 15px 45px; 
+    border: none; 
+    color: white; 
+    cursor: pointer; 
+    border-radius: 4px; 
+    font-size: large;
+
+  }
+
+  .startButton{
+
+    background-color: green; 
+    padding: 15px 45px; 
+    border: none; 
+    color: white; 
+    cursor: pointer; 
+    border-radius: 4px; 
+    font-size: large;
+
 
 
   }

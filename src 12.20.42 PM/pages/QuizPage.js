@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 
-function QuizPage({ question, nextQuestion }) {
+const QuizPage = ({ question, nextQuestion, updateScore }) => {
   const [selectedOption, setSelectedOption] = useState(null);
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
+
+    if (option === question.correctAnswer) {
+      updateScore(); // Call the updateScore function if the answer is correct
+    }
   };
 
   const exitQuiz = () => {
@@ -18,17 +22,17 @@ function QuizPage({ question, nextQuestion }) {
 
   return (
     <div>
-      <h2  className="question">{question.question}</h2>
+      <h2 className="question">{question.question}</h2>
       <ul>
         {question.options.map((option, index) => (
-          <li 
+          <li
             key={index}
             style={{
               ...selectedOption === option
                 ? isCorrect
                   ? correctStyle
                   : incorrectStyle
-                : {}
+                : {},
             }}
             onClick={() => handleOptionClick(option)}
           >
@@ -36,8 +40,10 @@ function QuizPage({ question, nextQuestion }) {
           </li>
         ))}
       </ul>
-     
-      <button className="nextButton" onClick={nextQuestion}>Next</button>
+
+      <button className="nextButton" onClick={nextQuestion}>
+        Next
+      </button>
       <button className="exitButton" onClick={exitQuiz}>
         Exit
       </button>
